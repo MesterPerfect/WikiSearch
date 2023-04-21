@@ -1,0 +1,493 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2023-03-16 14:59+0300\n"
+"PO-Revision-Date: 2023-04-19 12:22+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Generated-By: pygettext.py 1.5\n"
+"X-Generator: Poedit 3.2.2\n"
+
+msgid ""
+"With this program, you can search or browse any Wikipedia article. site: "
+"https://github.com/tecwindow/WikiSearch"
+msgstr ""
+"Avec ce programme, vous pouvez rechercher ou parcourir n'importe quel "
+"article de Wikipedia. site : https://github.com/tecwindow/WikiSearch"
+
+msgid "Choose the search language:"
+msgstr "Choisissez la langue de recherche :"
+
+msgid "Enter search words"
+msgstr "Saisissez les mots de recherche"
+
+msgid "Start search"
+msgstr "Démarrer la recherche"
+
+msgid "View random articles"
+msgstr "Afficher des articles au hasard"
+
+msgid "Close the program"
+msgstr "Fermer le programme"
+
+msgid "&Help file\tF1"
+msgstr "Fichier d'&aide F1"
+
+msgid "&About"
+msgstr "A &propos"
+
+msgid "Qais Alrefai"
+msgstr "Qais Alrefai"
+
+msgid "Mahmood atef"
+msgstr "Mahmood atef"
+
+msgid "Ahmed Bakr"
+msgstr "Ahmed Bakr"
+
+msgid "&Contact us"
+msgstr "&Contactez-nous"
+
+msgid "&Saved articles\tctrl+S"
+msgstr "&Articles sauvegardés\tctrl+S"
+
+msgid "&Favourite articles\tctrl+F"
+msgstr "&Articles favoris\tctrl+F"
+
+msgid "&History\tctrl+H"
+msgstr "&Historique\tctrl+H"
+
+msgid "Program &settings\tAlt+S"
+msgstr "&réglages du programme Alt+S"
+
+msgid "Check for &update\tctrl+u"
+msgstr "Vérifier la &se à jour\tctrl+u"
+
+msgid "Close program\tctrl+w"
+msgstr "Fermer le programme ctrl+w"
+
+msgid "Main menu"
+msgstr "Menu principal"
+
+msgid "There is 1 open article."
+msgstr "1 article est ouvert."
+
+msgid "There are {} open articles."
+msgstr "{} articles sont ouverts."
+
+msgid ""
+"{}\n"
+"Do you want to close the program anyway?"
+msgstr ""
+"{}\n"
+"Voulez-vous quand même fermer le programme ?"
+
+msgid "Confirm"
+msgstr "Confirmer"
+
+msgid "Don't show that again"
+msgstr "Ne plus montrer cela"
+
+msgid "&No"
+msgstr "&Non"
+
+msgid "&Yes"
+msgstr "&Oui"
+
+msgid ""
+"{} Version {}.\n"
+"{}\n"
+"This program was developed by:\n"
+"Ahmed Bakr.\n"
+"Qais Alrifai.\n"
+"Mahmoud Atef."
+msgstr ""
+"{} Version {}.\n"
+"{}\n"
+"Ce programme a été développé par :\n"
+"Ahmed Bakr.\n"
+"Qais Alrifai.\n"
+"Mahmoud Atef."
+
+msgid "About the program"
+msgstr "A propos du programme"
+
+msgid "&Ok"
+msgstr "&Ok"
+
+msgid ""
+"A link to an article with the title {} has been detected in your clipboard."
+msgstr ""
+"Un lien vers un article portant le titre {} a été détecté dans votre presse-"
+"papiers."
+
+msgid "AutoDetect"
+msgstr "Détection automatique"
+
+msgid "&Open in browser"
+msgstr "&Ouvrir dans le navigateur"
+
+msgid "&Cancel"
+msgstr "&Annuler"
+
+msgid "&View Article"
+msgstr "&Afficher l'article"
+
+msgid "Connection error"
+msgstr "Erreur de connexion"
+
+msgid "There is no internet connection."
+msgstr "Pas de connexion internet."
+
+msgid "No update available"
+msgstr "Aucune mise à jour n'a été trouvée"
+
+msgid "You are using version {} which is the latest version."
+msgstr "Vous utilisez la version {} qui se trouve être la dernière version."
+
+msgid "Article references"
+msgstr "Références de l'article"
+
+msgid "Reference {}: {}"
+msgstr "Référence {}: {}"
+
+msgid "Headings in this article"
+msgstr "Entêtes de cet article"
+
+msgid "Choose a heading"
+msgstr "Choisissez une entête"
+
+msgid "&Go"
+msgstr "&Aller"
+
+msgid "Tables in {}:"
+msgstr "Tableaux listés dans {}:"
+
+msgid "&Close"
+msgstr "&Fermer"
+
+msgid "History"
+msgstr "Historique"
+
+msgid "Search"
+msgstr "Recherche"
+
+msgid "Title"
+msgstr "Titre"
+
+msgid "Date"
+msgstr "Date"
+
+msgid "Time"
+msgstr "Temps"
+
+msgid "Article language"
+msgstr "Langue de l'article"
+
+msgid "&Copy article link"
+msgstr "&Copier le lien de l'article"
+
+msgid "&Delete"
+msgstr "&Supprimer"
+
+msgid "The selected item has been deleted."
+msgstr "L'élément sélectionné a été supprimé."
+
+msgid "Article link copied."
+msgstr "Lien de l'article copié."
+
+msgid "Error"
+msgstr "Erreur"
+
+msgid "This link cannot be copied."
+msgstr "Ce lien ne peut pas être copié."
+
+msgid "Opening:"
+msgstr "Ouverture de :"
+
+msgid "This link cannot be opened in the browser."
+msgstr "Ce lien ne peut pas être ouvert dans le navigateur."
+
+msgid "Favourite Articles"
+msgstr "Articles favoris"
+
+msgid "&Rename"
+msgstr "&Renommer"
+
+msgid "Choose the new name for the article."
+msgstr "Choisissez le nouveau nom de l'article."
+
+msgid "Rename the article"
+msgstr "Renommer l'article"
+
+msgid "Saved Articles"
+msgstr "Articles sauvegardés"
+
+msgid "Program Settings"
+msgstr "Réglages du programme"
+
+msgid "Choose language:"
+msgstr "Choisir la langue :"
+
+msgid "Choose your prefered view:"
+msgstr "Choisir la méthode d'affichage préférée :"
+
+msgid "Normal View"
+msgstr "Méthode d'affichage normale"
+
+msgid "Web View(Not recommended)"
+msgstr "Méthode d'affichage Web (non recommandée)"
+
+msgid "Select the number of results:"
+msgstr "Sélectionnez le nombre de résultats :"
+
+msgid "Select the number of random articles:"
+msgstr "Sélectionnez le nombre d'articles choisis au hasard :"
+
+msgid "Show Close message when at least an article is open"
+msgstr ""
+"Afficher le message de fermeture du programme lorsqu'au moins un article est "
+"ouvert"
+
+msgid "Auto detect links from the clipboard"
+msgstr "Détection automatique des liens à partir du presse-papiers"
+
+msgid "Check for updates automatically"
+msgstr "Vérifier les mises à jour automatiquement"
+
+msgid "Close the article via the Escape key"
+msgstr ""
+"Fermer l'article via la touche ÉchapClose the article via the Escape key"
+
+msgid "General"
+msgstr "Général"
+
+msgid "Delete history"
+msgstr "Supprimer l'historique"
+
+msgid "Delete favourites"
+msgstr "Supprimer les favoris"
+
+msgid "Delete saved articles"
+msgstr "Supprimer les articles sauvegardés"
+
+msgid "Reset to default settings"
+msgstr "Rétablir les paramètres par défaut"
+
+msgid "Advanced"
+msgstr "Avancé"
+
+msgid "&Save changes"
+msgstr "&Sauvegarder les modifications"
+
+msgid ""
+"You must restart the program for the new language to take effect.\n"
+"Do you want to restart the program now?"
+msgstr ""
+"Vous devez redémarrer le programme pour que la nouvelle langue prenne "
+"effet.\n"
+"Voulez-vous redémarrer le programme maintenant ?"
+
+msgid ""
+"Are you sure you want to reset all settings?\n"
+"The program will restart."
+msgstr ""
+"Êtes-vous sûr de vouloir réinitialiser tous les paramètres ?\n"
+"Le programme va redémarrer."
+
+msgid "Are you sure you want to delete the saved articles content?"
+msgstr ""
+"Êtes-vous sûr de vouloir supprimer le contenu des articles sauvegardés ?"
+
+msgid "Are you sure you want to delete your favourites content?"
+msgstr "Êtes-vous sûr de vouloir supprimer le contenu de vos favoris ?"
+
+msgid "Are you sure you want to delete the history content?"
+msgstr "Êtes-vous sûr de vouloir supprimer le contenu de l'historique ?"
+
+msgid "Update found"
+msgstr "Mise à jour trouvée"
+
+#, fuzzy
+#| msgid "version {} is available."
+msgid "Version {} is available."
+msgstr "La version {} est disponible."
+
+msgid "&Update"
+msgstr "&Mettre àjour"
+
+msgid "Downloading update"
+msgstr "Téléchargement de la mise à jour"
+
+msgid "Please wait."
+msgstr "Veuiller patienter."
+
+msgid "View article"
+msgstr "Voir l'article"
+
+msgid "&Copy article\tctrl+shift+c"
+msgstr "Copier l'article ctrl+maj+c"
+
+msgid "&Copy article link\talt+c"
+msgstr "Copier le lien de l'article\t+alt+c"
+
+msgid "Add to favourites\tctrl+f"
+msgstr "Ajouter aux favoris\tctrl+f"
+
+msgid "Add to saved articles\tctrl+shift+s"
+msgstr "Ajouter aux articles sauvegardés\tctrl+maj+s"
+
+msgid "&Headings in article\tCtrl+h"
+msgstr "&entètes de l'article\tCtrl+t"
+
+msgid "&References in article\tCtrl+r"
+msgstr "&Références de l'article\\tCtrl+r"
+
+msgid "&Tables in article\tCtrl+t"
+msgstr "&Tableaux de l'article\tCtrl+t"
+
+msgid "&Linked articles\tCtrl+l"
+msgstr "&Articles présentés comme liens\tCtrl+l"
+
+msgid "Go to"
+msgstr "Aller à"
+
+msgid "Save article as &txt\tctrl+shift+T"
+msgstr "Sauvegarder l'article sous format &txt\tctrl+shift+T"
+
+msgid "Save article as &html\tctrl+shift+H"
+msgstr "Sauvegarder l'article sous format &html\tctrl+shift+H"
+
+msgid "Save article"
+msgstr "Sauvegarder l'article"
+
+msgid "&Print\tctrl+P"
+msgstr "&Imprimer\tctrl+P"
+
+msgid "Close article window\tctrl+w"
+msgstr "Fermer la fenêtre de l'article\tctrl+w"
+
+msgid "Close the program\tctrl+F4"
+msgstr "Fermer le programme\tctrl+F4"
+
+msgid "Change &font\tCtrl+d"
+msgstr "Changer la &police\tCtrl+d"
+
+msgid "&Change color\tctrl+shift+d"
+msgstr "&Changer la couleur\tctrl+maj+d"
+
+msgid "Actions"
+msgstr "Actions"
+
+msgid "View"
+msgstr "Méthode d'affichage"
+
+msgid "Copy article"
+msgstr "Copier l'article"
+
+msgid "Copy article link"
+msgstr "Copier le lien de l'article"
+
+msgid "Close article"
+msgstr "Fermer l'article"
+
+msgid "Loading article:"
+msgstr "Chargement de l'article :"
+
+msgid ""
+"This article is no longer available.\n"
+"do you want to show similar results for this  article?\n"
+msgstr ""
+"Cet article n'est plus disponible.\n"
+"voulez-vous montrer des résultats similaires pour cet article ?\n"
+
+msgid "Warning"
+msgstr "Avertissement"
+
+msgid "View {}"
+msgstr "Afficher {}"
+
+msgid "Article loaded."
+msgstr "Article chargé."
+
+msgid "Article copied."
+msgstr "Article copié."
+
+msgid "Save {}:"
+msgstr "Sauvegarder {}:"
+
+msgid "Linked articles"
+msgstr "Articles présentés comme lien"
+
+msgid ""
+"Table {}:\n"
+" {}"
+msgstr ""
+"Tableau {}:\n"
+" {}"
+
+msgid "Add to Favourites"
+msgstr "Ajouter aux Favoris"
+
+msgid "Choose the name of the article in your favourites."
+msgstr "Choisissez le nom de l'article dans vos favoris."
+
+msgid "&Add"
+msgstr "&Ajouter"
+
+msgid "The article has been added to favourites."
+msgstr "L'article a été ajouté aux favoris."
+
+msgid "Add to saved articles"
+msgstr "Ajouter aux articles sauvegardés"
+
+msgid "Choose the name of the article in your saved articles."
+msgstr "Choisissez le nom de l'article dans vos articles sauvegardés."
+
+msgid "The article has been added to your saved articles."
+msgstr "L'article a été ajouté à vos articles sauvegardés."
+
+msgid "Lines: {}."
+msgstr "Lignes : {}."
+
+msgid "Paragraphs: {}."
+msgstr "Paragraphes : {}."
+
+msgid "Sentences: {}."
+msgstr "Phrases : {}."
+
+msgid "Words: {}."
+msgstr "Mots : {}."
+
+msgid "Characters: {}."
+msgstr "Lettres {}."
+
+msgid "Search results"
+msgstr "Résultats de recherche"
+
+msgid "Go&Back"
+msgstr "&Retourner"
+
+msgid "Random articles"
+msgstr "Articles choisis au hasard"
+
+msgid "We couldn't find  any articles that match your search."
+msgstr "Aucun article correspondant à votre recherche n'a pu être trouvé."
+
+msgid "<h1>Please wait</h1>"
+msgstr "<h1>Veuiller patienter</h1>"
+
+#~ msgid "Some required files are missing."
+#~ msgstr "Certains fichiers requis sont manquants."
+
+#~ msgid "Go to a &heading\tCtrl+h"
+#~ msgstr "Aller à une &entête\tCtrl+h"

@@ -6,40 +6,70 @@ import threading
 import pyperclip
 import webbrowser
 import accessible_output2.outputs.auto
+import datetime
+import globals as g
 from view_article_window import ViewArticleWindow
+from web_viewer import WebViewArticle
 from settings import Settings
-from ChLanguages import *
+from functions import *
 
+
+#Set language for View  Search Dialog
+_ = SetLanguage(Settings().ReadSettings())
 
 #create View  Search Dialog
 class ViewSearch(wx.Dialog):
 	def __init__(self, parent, TextSearch):
-		super().__init__(parent, title=_("Search results"), size=(300, 400))
-		self.Center()
+		wx.Dialog.__init__(self, parent, title=_("Search results"), size=(450, 400))
+		self.CenterOnParent()
 		self.TextSearch = TextSearch
-		self.NumberArticle = 0
 		self.o = accessible_output2.outputs.auto.Auto()
+
 		# Create panel
 		Panel = wx.Panel(self)
 
 		# Create ListBox
-		wx.StaticText(Panel, -1, _("Search results"), pos=(10,10), size=(380,30))
-		self.ListResults = wx.ListBox(Panel, -1, pos=(10,30), size=(290,170))
+		self.ListTitle = wx.StaticText(Panel, -1, _("Search results"))
+		self.ListResults = wx.ListBox(Panel, -1)
 
 		# Create Buttons
-		self.ViewArticle = wx.Button(Panel, -1, _("View Article\t(Alt+V)"), pos=(10,235), size=(120,30))
+		self.ViewArticle = wx.Button(Panel, -1, _("&View Article"))
 		self.ViewArticle.SetDefault()
 		self.ViewArticle.Enable(enable=False)
-		self.OpenInWebBrowser = wx.Button(Panel, -1, _("Open in browser\t(Alt+O)"), pos=(140,235), size=(120,30))
+		self.OpenInWebBrowser = wx.Button(Panel, -1, _("&Open in browser"))
 		self.OpenInWebBrowser.Enable(enable=False)
-		self.CopyArticleLink = wx.Button(Panel, -1, _("Copy article link\t(Alt+C)"), pos=(10,280), size=(120,30))
+		self.CopyArticleLink = wx.Button(Panel, -1, _("&Copy article link"))
 		self.CopyArticleLink.Enable(enable=False)
-		self.GoBack = wx.Button(Panel, wx.ID_CANCEL, _("GoBack\t(Alt+B)"), pos=(140,280), size=(120,30))
+		self.GoBack = wx.Button(Panel, wx.ID_CANCEL, _("Go&Back"))
+
+		# Create main sizer
+		sizer = wx.BoxSizer(wx.VERTICAL)
+
+		# Add widgets to sizer
+		sizer.Add(self.ListTitle, 0, wx.ALIGN_CENTER|wx.ALL, 5)
+		sizer.Add(self.ListResults, 2, wx.EXPAND|wx.ALL, 5)
+
+		# Create horizontal sizer.
+		button_sizer = wx.BoxSizer(wx.HORIZONTAL)
+
+		# Add buttons to horizontal sizer
+		button_sizer.Add(self.ViewArticle, 0, wx.ALL, 5)
+		button_sizer.Add(self.OpenInWebBrowser, 0, wx.ALL, 5)
+		button_sizer.Add(self.CopyArticleLink, 0, wx.ALL, 5)
+		button_sizer.Add(self.GoBack, 0, wx.ALL, 5)
+
+		# Add horizontal sizer to vertical sizer
+		sizer.Add(button_sizer, 0, wx.ALIGN_CENTRE|wx.ALL, 5)
+
+		# Set sizer for panel
+		Panel.SetSizer(sizer)
+		Panel.Fit()
 
 		self.hotKeys = wx.AcceleratorTable([
 			(wx.ACCEL_ALT, ord("V"), self.ViewArticle.GetId()),
 			(wx.ACCEL_ALT, ord("O"), self.OpenInWebBrowser.GetId()),
 			(wx.ACCEL_ALT, ord("C"), self.CopyArticleLink.GetId()),
+			(wx.ACCEL_CTRL, ord("W"), self.GoBack.GetId()),
 			(wx.ACCEL_ALT, ord("B"), self.GoBack.GetId()),
 		])
 		Panel.SetAcceleratorTable(self.hotKeys)
@@ -56,20 +86,42 @@ class ViewSearch(wx.Dialog):
 	#create thread function to show results in list box
 	def OpenThread(self):
 
-		ResultsNumber = Settings().ReadSettings()["ResultsNumber"]
+		# in case display random articles.
+		if not self.TextSearch:
+			self.ListTitle.SetLabel(_("Random articles"))
+			self.SetTitle(_("View random articles"))
+			RandomArticlesNumber = Settings().ReadSettings()["random articles number"]
+			if int(Settings().ReadSettings()["random articles number"]) >100:
+				RandomArticlesNumber = 100
+			RandomArticle = wikipedia.random(pages=RandomArticlesNumber)
+			self.ListResults.SetItems(RandomArticle)
+			self.ListResults.Selection = 0
+			self.ViewArticle.Enable(enable=True)
+			self.OpenInWebBrowser.Enable(enable=True)
+			self.CopyArticleLink.Enable(enable=True)
+			return None
+
+		# in case display search results.
+		ResultsNumber = Settings().ReadSettings()["results number"]
+		if int(Settings().ReadSettings()["results number"]) > 100:
+			ResultsNumber = 100
 
 		try:
 			self.ViewResults = wikipedia.search(self.TextSearch, results=ResultsNumber)
 		except:
-			wx.MessageBox(_("There is no internet connection."), _("Connection Error"), style=wx.ICON_ERROR)
+			ConnectionError = wx.MessageDialog(self, _("There is no internet connection."), _("Connection error"), style=wx.ICON_ERROR+wx.OK)
+			ConnectionError.SetOKLabel(_("&Ok"))
+			ConnectionError.ShowModal()
 			return None
 
 		self.ListResults.SetItems(self.ViewResults)
 		try:
 			self.ListResults.Selection = 0
 		except:
-			self.Destroy()
-			wx.MessageBox(_("We couldn't find  any articles that match your search."), _("Error"), style=wx.ICON_ERROR)
+			UnableToFind = wx.MessageDialog(None, _("We couldn't find  any articles that match your search."), _("Error"), style=wx.ICON_ERROR+wx.OK)
+			UnableToFind.SetOKLabel(_("&Ok"))
+			UnableToFind.ShowModal()
+			self.Close()
 
 		self.ViewArticle.Enable(enable=True)
 		self.OpenInWebBrowser.Enable(enable=True)
@@ -81,9 +133,12 @@ class ViewSearch(wx.Dialog):
 		try:
 			url = wikipedia.page(GetValues).url
 			webbrowser.open_new(url)
-			self.o.speak(_("Opening:"), interrupt=False)
+			if not self.o.is_system_output():
+				self.o.speak(_("Opening:"), interrupt=False)
 		except:
-			wx.MessageBox(_("This link cannot be opened in the browser."), _("Error"), style=wx.ICON_ERROR)
+			CantOpen = wx.MessageDialog(self, _("This link cannot be opened in the browser."), _("Error"), style=wx.ICON_ERROR+wx.OK)
+			CantOpen.SetOKLabel(_("&Ok"))
+			CantOpen.ShowModal()
 			return
 
 
@@ -93,16 +148,40 @@ class ViewSearch(wx.Dialog):
 		try:
 			url = wikipedia.page(GetValues).url
 			pyperclip.copy(url)
-			self.o.speak(_("Article link copied."), interrupt=False)
+			if not self.o.is_system_output():
+				self.o.speak(_("Article link copied."), interrupt=False)
 		except:
-			wx.MessageBox(_("This link cannot be copied."), _("Error"), style=wx.ICON_ERROR)
+			CantCopy = wx.MessageDialog(self, _("This link cannot be copied."), _("Error"), style=wx.ICON_ERROR)
+			CantCopy.SetOKLabel(_("&Ok"))
+			CantCopy.ShowModal()
 			return
 
 	#creating OnViewArticleWindow function  View Article On a New Window
 	def OnViewArticleWindow(self, event):
+
 		GetValues = self.ListResults.GetString(self.ListResults.GetSelection())
-		self.NumberArticle += 1
-		window1 = ViewArticleWindow(None, GetValues, self)
-		thread1 = threading.Thread(target=window1.OpenThread, daemon=True)
-		thread1.start()
+		CurrentSettings = Settings().ReadSettings()
+		state = CurrentSettings["wepviewer"]
+		ArticleLanguageName = CurrentSettings["search language"]
+
+		if state == "0":
+			window1 = ViewArticleWindow(None, GetValues, self)
+		else:
+			window1 = WebViewArticle(None, GetValues, self)
+
+		# Check if the article is saved in the database.
+		SavedArticle = g.Data.SearchData("SavedArticlesTable", "Title", GetValues)
+		if SavedArticle:
+			window1.LoadOflineArticle(SavedArticle)
+			return
+
+		#adding the article to history.
+		#Getting the date and time of visit article.
+		date = datetime.date.today()
+		time = datetime.datetime.now()
+		time = time.strftime("%H:%M:%S")
+		g.Data.InsertData("HistoryTable", (GetValues, str(date), str(time), ArticleLanguageName))
+
+
+
 

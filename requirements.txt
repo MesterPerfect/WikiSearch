@@ -1,4 +1,7 @@
-wxpython
+wxpython==4.1.1
 nlpia2_wikipedia
 pyperclip
 accessible_output2
+mouse
+bs4
+requests

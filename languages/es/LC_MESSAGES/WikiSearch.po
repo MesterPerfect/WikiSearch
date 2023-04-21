@@ -4,30 +4,19 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: EsWikiSearch V1.1.0\n"
-"POT-Creation-Date: 2022-07-29 19:42+0300\n"
-"PO-Revision-Date: 2022-07-30 01:35+0200\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2023-03-16 14:59+0300\n"
+"PO-Revision-Date: 2023-04-19 12:16+0300\n"
 "Last-Translator: \n"
-"Language-Team: TecWindow Team\n"
+"Language-Team: \n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: pygettext.py 1.5\n"
-"X-Generator: Poedit 1.8.7\n"
-"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 3.2.2\n"
 
-#: WikiSearch.py:25
-msgid "Some required files are missing."
-msgstr "Faltan algunos archivos necesarios."
-
-#: WikiSearch.py:25 view_search_dialog.py:73 view_search_dialog.py:87
-#: view_search_dialog.py:99
-msgid "Error"
-msgstr "Error"
-
-#: WikiSearch.py:40
 msgid ""
 "With this program, you can search or browse any Wikipedia article. site: "
 "https://github.com/tecwindow/WikiSearch"
@@ -35,59 +24,66 @@ msgstr ""
 "Con este programa podrá buscar o navegar por cualquier artículo de "
 "Wikipedia. Enlace al programa: https://github.com/tecwindow/WikiSearch"
 
-#: WikiSearch.py:58
 msgid "Choose the search language:"
-msgstr "Elija el idioma de búsqueda"
+msgstr "Elija el idioma de búsqueda:"
 
-#: WikiSearch.py:64
 msgid "Enter search words"
 msgstr "Introduzca su búsqueda"
 
-#: WikiSearch.py:68
 msgid "Start search"
 msgstr "Buscar"
 
-#: WikiSearch.py:71
-msgid "Close the program\t(ctrl+w)"
-msgstr "Cerrar el programa\t(ctrl+w)"
+msgid "View random articles"
+msgstr "Ver artículos aleatorios"
 
-#: WikiSearch.py:76
+msgid "Close the program"
+msgstr "Cerrar el programa"
+
 msgid "&Help file\tF1"
-msgstr "&Ayuda\tF1"
+msgstr "&Ayuda F1"
 
-#: WikiSearch.py:77
 msgid "&About"
 msgstr "&Acerca de"
 
-#: WikiSearch.py:83
+msgid "Qais Alrefai"
+msgstr "Qais Alrefai"
+
+msgid "Mahmood atef"
+msgstr "Mahmood Atef"
+
+msgid "Ahmed Bakr"
+msgstr "Ahmed Bakr"
+
 msgid "&Contact us"
 msgstr "&Contacto"
 
-#: WikiSearch.py:84
+msgid "&Saved articles\tctrl+S"
+msgstr "Artí&culos guardados\tctrl+S"
+
+msgid "&Favourite articles\tctrl+F"
+msgstr "&Artículos favoritos\tctrl+F"
+
+msgid "&History\tctrl+H"
+msgstr "Historial de artículos"
+
 msgid "Program &settings\tAlt+S"
-msgstr "Ajustes del &programa\tAlt+S"
+msgstr "Ajustes del &programa Alt+S"
 
-#: WikiSearch.py:85
 msgid "Check for &update\tctrl+u"
-msgstr "Buscar &actualización\tctrl+u"
+msgstr "Buscar &actualización ctrl+u"
 
-#: WikiSearch.py:86
 msgid "Close program\tctrl+w"
-msgstr "Cerrar el programa\tctrl+w"
+msgstr "Cerrar el programa ctrl+w"
 
-#: WikiSearch.py:87
 msgid "Main menu"
 msgstr "Menú principal"
 
-#: WikiSearch.py:125 view_article_window.py:184
 msgid "There is 1 open article."
 msgstr "Hay un artículo abierto."
 
-#: WikiSearch.py:127 view_article_window.py:186
 msgid "There are {} open articles."
-msgstr "Hay  {}  artículos abiertos."
+msgstr "Hay {} artículos abiertos."
 
-#: WikiSearch.py:129 view_article_window.py:188
 msgid ""
 "{}\n"
 "Do you want to close the program anyway?"
@@ -95,11 +91,18 @@ msgstr ""
 "{}\n"
 "¿Quiere cerrar el programa de todas maneras?"
 
-#: WikiSearch.py:130 settings.py:136
 msgid "Confirm"
 msgstr "Confirmar"
 
-#: WikiSearch.py:142
+msgid "Don't show that again"
+msgstr "No volver a mostrar"
+
+msgid "&No"
+msgstr "&No"
+
+msgid "&Yes"
+msgstr "&Sí"
+
 msgid ""
 "{} Version {}.\n"
 "{}\n"
@@ -115,85 +118,173 @@ msgstr ""
 "Qais Alrifai.\n"
 "Mahmoud Atef."
 
-#: WikiSearch.py:147
 msgid "About the program"
 msgstr "Sobre el programa"
 
-#: WikiSearch.py:159 WikiSearch.py:177
-msgid "Connection error"
-msgstr "Error de conexión"
+msgid "&Ok"
+msgstr "&De acuerdo"
 
-#: WikiSearch.py:159 WikiSearch.py:177 view_search_dialog.py:65
-msgid "There is no internet connection."
-msgstr "No hay conexión a Internet."
+msgid ""
+"A link to an article with the title {} has been detected in your clipboard."
+msgstr ""
+"Un link de un artículo con título {} ha sido detectado en su portapapeles."
 
-#: WikiSearch.py:189
-msgid "No update available"
-msgstr "No hay actualizaciones disponibles"
+msgid "AutoDetect"
+msgstr "Autodetectar"
 
-#: WikiSearch.py:189
-msgid "You are using version {} which is the latest version."
-msgstr "Está usando la versión {} actualmente, la última versión."
+msgid "&Open in browser"
+msgstr "&Abrir en el navegador"
 
-#: change_theme_dialog.py:14
-msgid "Change theme"
-msgstr "Cambiar el tema"
-
-#: change_theme_dialog.py:18
-msgid "Choose theme"
-msgstr "Escoja tema"
-
-#: change_theme_dialog.py:22
-msgid "&Change"
-msgstr "&Cambiar"
-
-#: change_theme_dialog.py:24 headings_list_dialog.py:30 settings.py:110
-#: update_dialog.py:55
 msgid "&Cancel"
 msgstr "&Cancelar"
 
-#: headings_list_dialog.py:10
+msgid "&View Article"
+msgstr "&Ver artículo"
+
+msgid "Connection error"
+msgstr "Error de conexión"
+
+msgid "There is no internet connection."
+msgstr "No hay conexión a Internet."
+
+msgid "No update available"
+msgstr "No hay actualizaciones disponibles"
+
+msgid "You are using version {} which is the latest version."
+msgstr "Está usando la versión {} actualmente, la última versión."
+
+msgid "Article references"
+msgstr "Referencias del artículo"
+
+msgid "Reference {}: {}"
+msgstr "Referencia {}: {}"
+
 msgid "Headings in this article"
 msgstr "Encabezados en este artículo"
 
-#: headings_list_dialog.py:18
 msgid "Choose a heading"
 msgstr "Elija un encabezado"
 
-#: headings_list_dialog.py:28
-msgid "Go\t(Alt+h)"
-msgstr "Ir\t(Alt+h)"
+msgid "&Go"
+msgstr "&Ir"
 
-#: settings.py:73
+msgid "Tables in {}:"
+msgstr "Tablas que hay en {}:"
+
+msgid "&Close"
+msgstr "&Cerrar"
+
+msgid "History"
+msgstr "Historial"
+
+msgid "Search"
+msgstr "Buscar"
+
+msgid "Title"
+msgstr "Título"
+
+msgid "Date"
+msgstr "Fecha"
+
+msgid "Time"
+msgstr "Hora"
+
+msgid "Article language"
+msgstr "Idioma del artículo"
+
+msgid "&Copy article link"
+msgstr "&Copiar enlace del artículo"
+
+msgid "&Delete"
+msgstr "&Eliminar"
+
+msgid "The selected item has been deleted."
+msgstr "El ítem seleccionado ha sido eliminado."
+
+msgid "Article link copied."
+msgstr "Enlace del artículo copiado."
+
+msgid "Error"
+msgstr "Error"
+
+msgid "This link cannot be copied."
+msgstr "No se puede copiar este enlace."
+
+msgid "Opening:"
+msgstr "Abriendo:"
+
+msgid "This link cannot be opened in the browser."
+msgstr "Este enlace no se puede abrir en el navegador."
+
+msgid "Favourite Articles"
+msgstr "Artículos Favoritos"
+
+msgid "&Rename"
+msgstr "&Renombrar"
+
+msgid "Choose the new name for the article."
+msgstr "Elija el nuevo nombre para el artículo."
+
+msgid "Rename the article"
+msgstr "Renombrar artículo"
+
+msgid "Saved Articles"
+msgstr "Artículos Guardados"
+
 msgid "Program Settings"
 msgstr "Ajustes del programa"
 
-#: settings.py:84
 msgid "Choose language:"
 msgstr "Elija un idioma:"
 
-#: settings.py:90
-msgid "Choose the number of results:"
-msgstr "Elija número de resultados:"
+msgid "Choose your prefered view:"
+msgstr "Escoja la vista que prefiere:"
 
-#: settings.py:95
+msgid "Normal View"
+msgstr "Vista Normal"
+
+msgid "Web View(Not recommended)"
+msgstr "Vista Web (No recomendada)"
+
+msgid "Select the number of results:"
+msgstr "Seleccione el número de resultados:"
+
+msgid "Select the number of random articles:"
+msgstr "Seleccione el número de artículos aleatorios:"
+
 msgid "Show Close message when at least an article is open"
-msgstr ""
-"Mostrar mensaje de cierre cuando haya al menos un artículo abierto."
+msgstr "Mostrar mensaje de cierre cuando haya al menos un artículo abierto"
 
-#: settings.py:99
+msgid "Auto detect links from the clipboard"
+msgstr "Autodetectar links del portapapeles "
+
 msgid "Check for updates automatically"
 msgstr "Buscar actualizaciones automáticamente"
 
-#: settings.py:103
 msgid "Close the article via the Escape key"
-msgstr "Cerrar el artículo con la tecla escape."
+msgstr "Cerrar el artículo con la tecla escape"
 
-#: settings.py:108
+msgid "General"
+msgstr "General"
+
+msgid "Delete history"
+msgstr "Borrar historial"
+
+msgid "Delete favourites"
+msgstr "Borrar favoritos"
+
+msgid "Delete saved articles"
+msgstr "Borrar artículos guardados"
+
+msgid "Reset to default settings"
+msgstr "Restablecer a los ajustes por defecto"
+
+msgid "Advanced"
+msgstr "Avanzado"
+
 msgid "&Save changes"
 msgstr "&Guardar cambios"
 
-#: settings.py:135
 msgid ""
 "You must restart the program for the new language to take effect.\n"
 "Do you want to restart the program now?"
@@ -201,83 +292,110 @@ msgstr ""
 "Debe reiniciar el programa para que el cambio de idioma sea efectivo.\n"
 "¿Quiere reiniciar el programa ahora?"
 
-#: update_dialog.py:41
-msgid "There is an update"
-msgstr "Hay una actualización"
+msgid ""
+"Are you sure you want to reset all settings?\n"
+"The program will restart."
+msgstr ""
+"¿Está seguro de que desea restablecer todos los ajustes? \n"
+"El programa se reiniciará."
 
-#: update_dialog.py:49
-msgid "What's new in version {}?"
-msgstr "¿Qué tiene de nuevo la versión {}?"
+msgid "Are you sure you want to delete the saved articles content?"
+msgstr ""
+"¿Está seguro de que quiere borrar el contenido de sus artículos guardados?"
 
-#: update_dialog.py:53
+msgid "Are you sure you want to delete your favourites content?"
+msgstr "¿Está seguro de que quiere borrar su contenido de favoritos?"
+
+msgid "Are you sure you want to delete the history content?"
+msgstr "¿Está seguro de que quiere borrar el contenido del historial?"
+
+msgid "Update found"
+msgstr "Se ha encontrado una actualización"
+
+msgid "Version {} is available."
+msgstr "Versión {} disponible."
+
 msgid "&Update"
 msgstr "&Actualizar"
 
-#: update_dialog.py:65
 msgid "Downloading update"
 msgstr "Descargando actualización"
 
-#: update_dialog.py:65 view_article_window.py:65
 msgid "Please wait."
 msgstr "Por favor Espere."
 
-#: view_article_window.py:21
 msgid "View article"
 msgstr "Ver artículo"
 
-#: view_article_window.py:38
-msgid "Copy article\tctrl+shift+c"
-msgstr "Copiar artículo\t(ctrl+shift+c)"
+msgid "&Copy article\tctrl+shift+c"
+msgstr "Copiar artículo (ctrl+shift+c)"
 
-#: view_article_window.py:40
-msgid "Copy article link\tctrl+alt+c"
-msgstr "Copiar enlace del artículo\t(ctrl+alt+c)"
+msgid "&Copy article link\talt+c"
+msgstr "Copiar enlace del artículo (alt+c)"
 
-#: view_article_window.py:42
-msgid "Save article\tctrl+s"
-msgstr "Guardar artículo\tctrl+s"
+msgid "Add to favourites\tctrl+f"
+msgstr "Añadir a favoritos\tctrl+f"
 
-#: view_article_window.py:44
-msgid "Go to a &heading \tCtrl+h"
-msgstr "Ir a &encabezado \tCtrl+h"
+msgid "Add to saved articles\tctrl+shift+s"
+msgstr "Añadir en artículos guardados\tctrl+shift+s"
 
-#: view_article_window.py:46
-msgid "Change theme\tctrl+T"
-msgstr "Cambiar tema\tctrl+T"
+msgid "&Headings in article\tCtrl+h"
+msgstr "&Encabezados en el artículo\tCtrl+h"
 
-#: view_article_window.py:47
+msgid "&References in article\tCtrl+r"
+msgstr "&Referencias del artículo\tCtrl+r"
+
+msgid "&Tables in article\tCtrl+t"
+msgstr "&Tablas del artículo\tCtrl+t"
+
+msgid "&Linked articles\tCtrl+l"
+msgstr "&Artículos enlazados\tCtrl+l"
+
+msgid "Go to"
+msgstr "Ir a"
+
+msgid "Save article as &txt\tctrl+shift+T"
+msgstr "Guardar artículo en formato &txt\tctrl+shift+T"
+
+msgid "Save article as &html\tctrl+shift+H"
+msgstr "Guardar artículo en formato &html\tctrl+shift+H"
+
+msgid "Save article"
+msgstr "Guardar artículo"
+
+msgid "&Print\tctrl+P"
+msgstr "&Imprimir\tctrl+P"
+
 msgid "Close article window\tctrl+w"
-msgstr "Cerrar ventana del artículo\tctrl+w"
+msgstr "Cerrar ventana del artículo ctrl+w"
 
-#: view_article_window.py:48
 msgid "Close the program\tctrl+F4"
-msgstr "Cerrar el programa\tctrl+F4"
+msgstr "Cerrar el programa ctrl+F4"
 
-#: view_article_window.py:49
+msgid "Change &font\tCtrl+d"
+msgstr "Cambiar &fuente\tCtrl+d"
+
+msgid "&Change color\tctrl+shift+d"
+msgstr "&Cambiar color\tctrl+shift+d"
+
 msgid "Actions"
 msgstr "Acciones"
 
-#: view_article_window.py:70
-msgid "Copy article\t(ctrl+shift+c)"
-msgstr "Copiar artículo\t(ctrl+shift+c)"
+msgid "View"
+msgstr "Ver"
 
-#: view_article_window.py:72
-msgid "Save article\t(ctrl+s)"
-msgstr "Guardar artículo\t(ctrl+s)"
+msgid "Copy article"
+msgstr "Copiar artículo"
 
-#: view_article_window.py:75
-msgid "Copy article link\t(ctrl+alt+c)"
-msgstr "Copiar enlace del artículo\t(ctrl+alt+c)"
+msgid "Copy article link"
+msgstr "Copiar enlace del artículo"
 
-#: view_article_window.py:77
-msgid "Close article\t(ctrl+w)"
-msgstr "Cerrar artículo\t(ctrl+w)"
+msgid "Close article"
+msgstr "Cerrar artículo"
 
-#: view_article_window.py:106
 msgid "Loading article:"
-msgstr "Cargando artículo"
+msgstr "Cargando artículo:"
 
-#: view_article_window.py:108
 msgid ""
 "This article is no longer available.\n"
 "do you want to show similar results for this  article?\n"
@@ -285,67 +403,78 @@ msgstr ""
 "Este artículo ya no está disponible.\n"
 "¿Quiere ver resultados similares?\n"
 
-#: view_article_window.py:110
 msgid "Warning"
 msgstr "Advertencia"
 
-#: view_article_window.py:126
 msgid "View {}"
 msgstr "Ver {}"
 
-#: view_article_window.py:136
-msgid "Article loaded"
-msgstr "Artículo cargado"
+msgid "Article loaded."
+msgstr "Artículo cargado."
 
-#: view_article_window.py:141
 msgid "Article copied."
 msgstr "Artículo copiado."
 
-#: view_article_window.py:147 view_search_dialog.py:97
-msgid "Article link copied."
-msgstr "Enlace del artículo copiado."
-
-#: view_article_window.py:153
 msgid "Save {}:"
 msgstr "Guardar {}:"
 
-#: view_search_dialog.py:18 view_search_dialog.py:27
+msgid "Linked articles"
+msgstr "Artículos enlazados"
+
+msgid ""
+"Table {}:\n"
+" {}"
+msgstr ""
+"Tabla {}:\n"
+" {}"
+
+msgid "Add to Favourites"
+msgstr "Añadir a favoritos"
+
+msgid "Choose the name of the article in your favourites."
+msgstr "Escoja el nombre del artículo para añadirlo a sus favoritos"
+
+msgid "&Add"
+msgstr "&Añadir"
+
+msgid "The article has been added to favourites."
+msgstr "El artículo ha sido añadido a favoritos"
+
+msgid "Add to saved articles"
+msgstr "Añadir a atículos guardados."
+
+msgid "Choose the name of the article in your saved articles."
+msgstr "Elija el nombre del artículo en los artículos guardados"
+
+msgid "The article has been added to your saved articles."
+msgstr "El artículo ha sido añadido a sus artículos guardados"
+
+msgid "Lines: {}."
+msgstr "Líneas: {}."
+
+msgid "Paragraphs: {}."
+msgstr "Párrafos: {}."
+
+msgid "Sentences: {}."
+msgstr "Frases: {}."
+
+msgid "Words: {}."
+msgstr "Palabras: {}."
+
+msgid "Characters: {}."
+msgstr "Carácteres: {}."
+
 msgid "Search results"
 msgstr "Resultados de búsqueda"
 
-#: view_search_dialog.py:31
-msgid "View Article\t(Alt+V)"
-msgstr "Ver artículo\t(Alt+V)"
+msgid "Go&Back"
+msgstr "&Atrás"
 
-#: view_search_dialog.py:34
-msgid "Open in browser\t(Alt+O)"
-msgstr "Abrir en el navegador\t(Alt+O)"
+msgid "Random articles"
+msgstr "Artículos aleatorios"
 
-#: view_search_dialog.py:36
-msgid "Copy article link\t(Alt+C)"
-msgstr "Copiar enlace del artículo\t(Alt+C)"
-
-#: view_search_dialog.py:38
-msgid "GoBack\t(Alt+B)"
-msgstr "Atrás\t(Alt+B)"
-
-#: view_search_dialog.py:65
-msgid "Connection Error"
-msgstr "Error de conexión"
-
-#: view_search_dialog.py:73
 msgid "We couldn't find  any articles that match your search."
-msgstr ""
-"No se ha podido encontrar ningún artículo que cumpla con su búsqueda."
+msgstr "No se ha podido encontrar ningún artículo que cumpla con su búsqueda."
 
-#: view_search_dialog.py:85
-msgid "Opening:"
-msgstr "Abriendo:"
-
-#: view_search_dialog.py:87
-msgid "This link cannot be opened in the browser."
-msgstr "Este enlace no se puede abrir en el navegador."
-
-#: view_search_dialog.py:99
-msgid "This link cannot be copied."
-msgstr "No se puede copiar este enlace."
+msgid "<h1>Please wait</h1>"
+msgstr "<h1>Por favor espere</h1>"

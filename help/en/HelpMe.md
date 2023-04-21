@@ -1,9 +1,8 @@
-﻿# WikiSearch
+# WikiSearch
+
+## Program function:
+
 This simple program enables you to search Wikipedia, the free encyclopedia, without having to open your browser.
-
-## download:
-
-You can download the latest version [using this link.](https://github.com/tecwindow/WikiSearch/releases/download/V1.4.0/WikiSearchV1.4.0.exe)
 
 ## what's new:
 
@@ -42,7 +41,7 @@ This version includes many features and bug fixes.
 
 ### Version 1.3:
 
-  This version comes with some bug fixes.
+This version comes with some bug fixes.
 
 - Now the French translation will appear correctly.
 - Fixed the issue related to the Unicode.
@@ -79,7 +78,7 @@ We are still learning and improving this software as we improve our knowledge of
 
 - The program now supports translation and you can contribute to translating it into your language.
 - The English strings have been rechecked and an Arabic translation has been added, many thanks to Riad Assoum.
-- A Spanish translation was added, many thanks to Georgiana frincu.
+- A Spanish translation was added, many thanks to Georgiana Frincu.
 - Hotkeys have been greatly improved, each feature of the program now has its own functioning hotkey.
 - Screen readers will now speak a number of actions if performed properly by the user.
 - Screen readers will notify you when an article is loaded.
@@ -87,51 +86,32 @@ We are still learning and improving this software as we improve our knowledge of
 - You can now customize the number of search results up to 100 at the moment (you can change the number from the settings).
 - You can now close the article window using the escape key (you can enable this feature from the settings).
 - The program will now warn you if you try to close it while one or more articles are open (this feature can be disabled from the settings).
-- The program will now check for updates automatically when launched (you can disable this feature from the settings.
+- The program will now check for updates automatically when launched (you can disable this feature from the settings).
 - The program will now remember the selected search language for future uses.
-
-## Features
-* Look up any article quickly and efficiently.
-* View the entire article from within the program.
-* Browse more than one article at a time in separate windows.
-* Save articles as text files on your PC.
-* Change the color of the entire frame while reading the article. The next versions will allow further customizations to the colors and fonts.
-* An auto-updater that allows users quick access to new features.
-
-## Supported OS:
-The software supports Windows 8 and above with both 32 and 64 bit architectures.
-
-## Requirements
-Python 3.xx 
-
-## Modules and packages
-* accessible_output2
-* nlpia2_wikipedia
-* webbrowser
-* subprocess
-* threading 
-* pyperclip
-* wxpython
-* request
-* shutil
-* mouse
-* json
-* bs4
-* os
-* re
-
-## How to use
-* install  all packages using pip
-`pip install -r requirements.txt`
-* start WikiSearch.py
-`python WikiSearch.py
-* Search for what you want
-
-## Program developers:
-* MesterPerfect https://github.com/mesterPerfect
-* QaisAlrefai https://github.com/QaisAlrefai
-* MahmoudAtef https://github.com/MahmoudAtefFarook
 
 ## special thanks:
 
-Many of our friends and users contributed to testing the program and sending us their feedback and suggestions. In no particular order, we would like to thank Riad, ikrami, Mahmoud shrawy, Muhammad Hajjar, Ahmed Manninah, Moataz Geba, Fawaz Abdul Rahman, Georgiana frincu, Agustín aguirre, Angelina, Nacer baaziz, Hermina.
+Many of our friends and users contributed to testing the program and sending us their feedback and suggestions. In no particular order, we would like to thank Riad, ikrami, Mahmoud shrawy, Muhammad Hajjar, Ahmed Manninah, Moataz Geba, Fawaz Abdul Rahman, Georgiana frincu, Agustín aguirre, Angelina, Nacer baaziz, Abdulla dubais, Hermina.
+
+## Features:
+
+- Look up any article quickly and efficiently.
+- View the entire article from within the program.
+- Browse more than one article at a time in separate windows.
+- Save articles as  files on your PC.
+- Change the color and font while reading the article.
+- An auto-updater that allows users quick access to new features.
+
+## Notes:
+
+- We will constantly update the program to add new features requested by our users. This means that the more a feature is suggested, the quicker it will be implemented.
+- If you want to translate the program into your language, please contact us via one of the E-mail addresses in this file or our Telegram accounts.
+- You can suggest features and report bugs via GitHub or contact us via our social media accounts available in the main menu.
+- The software supports Windows 8 and above with both 32 and 64 bit architectures.
+
+GitHub repository: https://github.com/tecwindow/WikiSearch
+## Program developers:
+
+- Mahmoud Atef: mahmoud.atef.987123@gmail.com
+- Mester Perfect: AhmedBakr593@gmail.com
+- Qais Alrefai: ww258148@gmail.com

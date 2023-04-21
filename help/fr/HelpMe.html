@@ -1,0 +1,115 @@
+<html><head><style>body {
+   color: black;
+}
+</style></head><body><h1 id="wikisearch">WikiSearch</h1>
+<h2 id="fonction-du-programme-">Fonction du programme :</h2>
+<p>Ce programme simple vous permet de faire des recherches dans Wikipédia, l&#39;encyclopédie libre, sans avoir à ouvrir votre navigateur.</p>
+<h2 id="nouveaut-s-">Nouveautés :</h2>
+<h3 id="version-1-4-">Version 1.4 :</h3>
+<p>Cette version comprend de nombreuses fonctionnalités et corrections de bugs.</p>
+<ul>
+<li>Ajout de plusieurs listes d&#39;articles.<ul>
+<li>Ajout de la possibilité de sauvegarder des articles pour une lecture hors ligne. Vous pouvez sauvegarder l&#39;article dans le programme et y revenir à tout moment.</li>
+<li>Ajout de la fonction Articles favoris, qui vous permet d&#39;enregistrer n&#39;importe quel article dans la liste des articles favoris afin de pouvoir y revenir à tout moment à partir de la même liste.</li>
+<li>Ajout de la fonction Historique, une liste qui enregistre les articles que vous avez consultés et vous permet d&#39;y revenir à tout moment.<ul>
+<li>Les listes Favoris et Articles sauvegardés vous permettent de renommer l&#39;article et de supprimer les articles sauvegardés. Appuyez sur la touche Applications sur n&#39;importe quel élément de l&#39;une ou l&#39;autre liste et vous trouverez les options appropriées. Vous pouvez également utiliser la touche Suppr pour supprimer des articles ou la touche F2 pour les renommer.</li>
+<li>Vous pouvez sauvegarder n&#39;importe quel article à partir du menu d&#39;action de la fenêtre d&#39;affichage des articles, et vous pouvez accéder à ces listes à partir du menu principal de la fenêtre principale. Chaque option possède son propre raccourci.</li>
+<li>Les données des articles sont stockées dans un fichier nommé WikiSearch.db dans le dossier WikiSearch dans AppData\Roaming. Vous pouvez supprimer une partie spécifique du contenu du fichier à partir des paramètres du programme.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Ajout d&#39;une fonctionnalité permettant de détecter les liens Wikipédia à partir de votre presse-papiers lorsque vous ouvrez WikiSearch. Vous pouvez afficher l&#39;article dans le programme, l&#39;ouvrir dans le navigateur ou ignorer le message. Vous pouvez activer ou désactiver cette fonctionnalité dans les paramètres.</li>
+<li>Si vous collez le lien d&#39;un article de Wikipedia dans le champ de recherche et que vous appuyez sur Entrée, l&#39;article s&#39;affichera immédiatement.</li>
+<li>WikiSearch se lance désormais dans la langue sélectionnée lors de l&#39;installation.</li>
+<li>Des améliorations ont été apportées à la fenêtre d&#39;affichage des articles dans la page html. En raison d&#39;un changement dans wxPython, le lecteur d&#39;écran nvda ne peut pas naviguer dans la liste des actions. Pour contourner ce problème, allez sur n&#39;importe quel bouton de la fenêtre et appuyez sur alt, et les menus fonctionneront correctement.</li>
+<li>Ajout d&#39;une barre d&#39;état à la fenêtre Affichage de l&#39;article, contenant un compteur pour le nombre de lettres, de mots, etc. dans l&#39;article. Vous pouvez obtenir la même information en appuyant sur les chiffres de 1 à 5.</li>
+<li>Ajout d&#39;une case à cocher pour désactiver la fenêtre d&#39;avertissement de fermeture lorsqu&#39;il y a des articles ouverts, la case à cocher apparaît dans la même fenêtre.</li>
+<li>La fenêtre d&#39;affichage des tableaux n&#39;affiche plus de lignes vides.</li>
+<li>Les fenêtres du programme peuvent désormais être redimensionnées et déplacées sur l&#39;écran.</li>
+<li>Ajout d&#39;une option dans les paramètres pour restaurer les paramètres par défaut du programme.</li>
+<li>Mise à jour de la version de Python utilisée à Python 3.10 et de wxPython à 4.2.0. Remplacement de Pyinstaller par Cx_Frees.</li>
+<li>Correction d&#39;un bug à cause duquel WikiSearch renvoyait un article différent de celui sélectionné dans les résultats de la recherche.</li>
+<li>Correction d&#39;un bug à cause duquel WikiSearch recherchait dans une langue différente de celle sélectionnée dans la langue de recherche.</li>
+<li>Correction d&#39;un bug à cause duquel la fenêtre d&#39;avertissement de fermeture n&#39;affichait pas correctement le nombre d&#39;articles ouverts.</li>
+<li>Désactivation de l&#39;astuce permettant d&#39;augmenter le nombre de résultats au-delà de 100.</li>
+<li>WikiSearch n&#39;utilise plus Sapi5 pour prononcer certaines actions lorsqu&#39;il est utilisé sans lecteur d&#39;écran.</li>
+<li>Plusieurs améliorations du code ont été apportées, ainsi qu&#39;un certain nombre de petites corrections de bugs ici et là.</li>
+</ul>
+<h4 id="note-">Note :</h4>
+<ul>
+<li>La fonction Imprimer l&#39;article a été ajoutée. Elle devrait fonctionner correctement lorsqu&#39;elle est utilisée à partir de la fenêtre d&#39;affichage de l&#39;article en html. Si vous utilisez le ode d&#39;affichage classique pour lire l&#39;article, nous sommes désolés de vous dire que nous n&#39;avons pas réussi à faire fonctionner cette fonctionnalité de manière optimale pour le moment. Si vous êtes en mesure de contribuer à l&#39;achèvement de cette fonctionnalité, vous pouvez le faire via GitHub.</li>
+</ul>
+<h3 id="version-1-3-">Version 1.3 :</h3>
+<p>Cette version contient quelques corrections de bugs.</p>
+<ul>
+<li>La traduction française s&#39;affiche désormais correctement.</li>
+<li>Correction du problème lié à l&#39;Unicode.</li>
+<li>Correction du bug où le programme ne se lançait pas s&#39;il était installé pour la première fois et n&#39;était pas mis à jour depuis une version précédente.</li>
+</ul>
+<h3 id="version-1-2-">Version 1.2:</h3>
+<p>Cette version comporte de nombreuses nouvelles fonctionnalités et corrections de bugs.</p>
+<ul>
+<li>Ajout de la traduction française, Merci Riad Assoum.</li>
+<li>Vous pouvez maintenant ajuster la taille et la couleur de la police pendant la lecture de l&#39;article.</li>
+<li>Ajout d&#39;une option pour afficher un dialogue avec les tableaux de l&#39;article. Attention : cela ne s&#39;affiche pas toujours correctement, cela dépend plutôt du format de l&#39;article.</li>
+<li>Ajout d&#39;une option permettant d&#39;afficher une liste de références externes à l&#39;intérieur de l&#39;article afin que vous puissiez les ouvrir dans votre navigateur.</li>
+<li>Ajout d&#39;une option permettant d&#39;afficher les articles liés à l&#39;article actuellement affiché. Vous pouvez interagir avec eux comme vous le faites avec les résultats de la recherche.</li>
+<li>Vous pouvez maintenant sauvegarder l&#39;article en tant que fichier HTML.</li>
+<li>Ajout de la possibilité d&#39;afficher des articles au hasard dont la langue dépend de la langue de recherche déjà définie. Vous pouvez interagir avec eux comme vous le faites avec les résultats de la recherche.</li>
+<li>Ajout d&#39;une option dans les paramètres pour afficher l&#39;article au format HTML (note : boguée et peu fiable).</li>
+<li>Ajout de plusieurs méthodes de communication dans le menu principal pour contacter les développeurs.</li>
+<li>Modification de quelques options dans le menu d&#39;action de la fenêtre de l&#39;article affiché.</li>
+<li>Le programme démarrera plus rapidement si vous désactivez la fonction de vérification automatique des mises à jour.</li>
+<li>Correction d&#39;un bug où le journal des modifications d&#39;une mise à jour ne s&#39;affichait pas correctement dans la boîte de dialogue de mise à jour.</li>
+<li>Modification de certains raccourcis clavier.</li>
+<li>Correction de quelques bugs mineurs çà et là.</li>
+</ul>
+<h4 id="remarques-">Remarques :</h4>
+<ul>
+<li>En raison d&#39;un changement dans les suffixes de langue dans cette version, la langue du programme reviendra automatiquement à l&#39;anglais après la mise à jour. Vous n&#39;aurez à la changer qu&#39;une seule fois et elle sera sauvegardée automatiquement comme avant.</li>
+<li>Toutes les nouvelles options d&#39;article peuvent être trouvées en appuyant sur alt et en parcourant les menus où vous pouvez trouver et apprendre toutes les touches de raccourci.</li>
+<li>Tous les raccourcis seront plus tard écrits dans ce fichier.</li>
+</ul>
+<h3 id="version-1-1-">Version 1.1:</h3>
+<p>Nous continuons à apprendre et à améliorer ce logiciel au fur et à mesure que nous améliorons notre connaissance de la programmation, et nous avons pu ajouter un certain nombre de fonctionnalités dans cette version.</p>
+<ul>
+<li>Le programme supporte maintenant la traduction et vous pouvez contribuer à le traduire dans votre langue.</li>
+<li>Le fichier de langue anglaise a été revérifié et une traduction arabe a été ajoutée, un grand merci à Riad Assoum.</li>
+<li>Une traduction en espagnol a été ajoutée, un grand merci à Georgiana frincu.</li>
+<li>Les touches de raccourci ont été grandement améliorées, chaque fonctionnalité du programme a maintenant sa propre touche de raccourci fonctionnelle.</li>
+<li>Les lecteurs d&#39;écran prononcent désormais un certain nombre d&#39;actions si elles sont effectuées correctement par l&#39;utilisateur.</li>
+<li>Les lecteurs d&#39;écran vous avertiront lorsqu&#39;un article est chargé.</li>
+<li>Vous pouvez désornais sauter à n&#39;importe quelle entête de l&#39;article tout en le lisant.</li>
+<li>Vous pouvez désormais personnaliser le nombre de résultats de recherche, jusqu&#39;à 100 pour le moment (vous pouvez modifier ce nombre dans les paramètres).</li>
+<li>Vous pouvez maintenant fermer la fenêtre de l&#39;article en utilisant la touche &quot;Echap&quot; (vous pouvez activer cette fonction dans les paramètres).</li>
+<li>Le programme vous avertit désormais si vous essayez de le fermer alors qu&#39;un ou plusieurs articles sont ouverts (cette fonction peut être désactivée dans les paramètres).</li>
+<li>Le programme vérifie désormais automatiquement les mises à jour lorsqu&#39;il est lancé (vous pouvez désactiver cette fonction dans les paramètres).</li>
+<li>Le programme se souvient désormais de la langue de recherche sélectionnée pour les utilisations futures.</li>
+</ul>
+<h2 id="remerciements-sp-ciaux-">remerciements spéciaux :</h2>
+<p>Beaucoup de nos amis et des utilisateurs du programme ont contribué à le tester et à nous envoyer leurs commentaires et suggestions. Sans ordre particulier, nous aimerions remercier Riad, ikrami, Mahmoud shrawy, Muhammad Hajjar, Ahmed Manninah, Moataz Geba, Fawaz Abdul Rahman, Georgiana frincu, Agustín aguirre, Angelina, Nacer baaziz, Abdulla dubais, Hermina.</p>
+<h2 id="fonctionnalit-s-du-programme-">fonctionnalités du programme :</h2>
+<ul>
+<li>Rechercher n&#39;importe quel article rapidement et efficacement.</li>
+<li>Afficher l&#39;article entier à partir du programme.</li>
+<li>Parcourir plus d&#39;un article à la fois dans des fenêtres séparées.</li>
+<li>Sauvegarder les articles en tant que fichiers texte sur votre PC.</li>
+<li>Changer la couleur et la police pendant la lecture de l&#39;article.</li>
+<li>Une mise à jour automatique qui permet aux utilisateurs d&#39;accéder rapidement aux nouvelles fonctionnalités.</li>
+</ul>
+<h2 id="remarques-">Remarques :</h2>
+<ul>
+<li>Nous mettrons constamment à jour le programme pour ajouter de nouvelles fonctionnalités demandées par nos utilisateurs. Cela signifie que plus une fonctionnalité est suggérée, plus vite elle sera mise en œuvre.</li>
+<li>Si vous souhaitez traduire le programme dans votre langue, veuillez nous contacter via l&#39;une des adresses e-mail de ce fichier ou nos comptes Telegram.</li>
+<li>Vous pouvez suggérer des fonctionnalités et signaler des bugs via GitHub ou nous contacter via nos comptes de médias sociaux disponibles dans le menu principal.</li>
+<li>Le logiciel prend en charge Windows 8 et plus avec les architectures 32 et 64 bits.</li>
+</ul>
+<p>Dépôt GitHub : <a href="https://github.com/tecwindow/WikiSearch">https://github.com/tecwindow/WikiSearch</a></p>
+<h2 id="d-veloppeurs-du-programme-">Développeurs du programme :</h2>
+<ul>
+<li>Mahmoud Atef: mahmoud.atef.987123@gmail.com</li>
+<li>Mester Perfect: AhmedBakr593@gmail.com</li>
+<li>Qais Alrefai: ww258148@gmail.com</li>
+</ul>
+</body></html>
